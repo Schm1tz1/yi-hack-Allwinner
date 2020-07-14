@@ -1,6 +1,6 @@
 var APP = APP || {};
 
-APP.maintenance = (function ($) {
+APP.maintenance_new = (function ($) {
 
     var timeoutVar;
 
