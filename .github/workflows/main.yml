@@ -6,7 +6,7 @@ on:
   push:
     branches:
     - master
-    - crdnl/*
+    - testing/*
   pull_request:
     branches: 
     - master
