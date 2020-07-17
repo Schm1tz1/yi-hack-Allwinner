@@ -44,6 +44,13 @@ if [ ! -L /home/yi-hack-v4 ]; then
 fi
 
 # if we have a pre-configured httpd.conf (e.g. for special permissions), use it
+#
+# example httpd.conf to only allow user root, password root to access the configurations and maintenance sites:
+#
+#/pages/configurations.html:admin:nimda
+#/pages/maintenance.html:admin:nimda
+#
+
 if [ -r $YI_HACK_PREFIX/etc/httpd.conf ]; then
   cp -f $YI_HACK_PREFIX/etc/httpd.conf /tmp/
 else
